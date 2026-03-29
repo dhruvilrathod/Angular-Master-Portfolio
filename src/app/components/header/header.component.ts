@@ -51,25 +51,6 @@ export class HeaderComponent {
         }
     }
 
-    public resumeDownload(): void {
-        const absolutePath = this.constructAbsolutePath(AssetPaths.RESUME_IT);
-        this._httpClient.get(absolutePath, { responseType: 'blob' }).subscribe({
-            next: (blob) => {
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = this.getFileNameFromPath(AssetPaths.RESUME_IT); // Extract the file name
-                a.click();
-                window.URL.revokeObjectURL(url);
-                console.log("Document downloaded successfully.");
-            },
-            error: (err) => {
-                console.error("Error downloading the document: ", err);
-            },
-        });
-    
-    }
-
     private constructAbsolutePath(relativePath: string): string {
         return `${window.location.origin}/${relativePath}`;
     }

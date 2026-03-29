@@ -8,104 +8,62 @@ import { AssetPaths } from "./asset-paths.enum";
 // Social media links to show
 const SocialMediaLinks: ExternalSite[] = [
     {
-        name: "Github",
-        link: "https://github.com/dhruvilrathod",
-        simpleIconName: "GitHub",
-        backgroundColor: "#181717",
-    },
-    {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/dhruvilrathod/",
+        link: "https://www.linkedin.com/in/rado-mahenina-randrianjanahary-049a01331/?skipRedirect=true",
         simpleIconName: "LinkedIn", // this icon is not available in simple icon v14
         backgroundColor: "#0066c8", // manually checked
     },
     {
-        name: "LeetCode",
-        link: "https://leetcode.com/dhruvilrathod/",
-        simpleIconName: "LeetCode",
-        backgroundColor: "#FFA116",
-    },
-    {
         name: "Gmail",
-        link: "mailto:thedhruvilrathod@gmail.com",
+        link: "https://mail.google.com/mail/?view=cm&to=radomaheninarandrianjanahary@gmail.com",
         simpleIconName: "Gmail",
         backgroundColor: "#EA4335",
     },
     {
-        name: "Instagram",
-        link: "https://www.instagram.com/dhruvil.rthd/",
-        simpleIconName: "Instagram",
-        backgroundColor: "#FF0069",
-    }
+        name: "WhatsApp",
+        link: "https://wa.me/261342665876",
+        simpleIconName: "WhatsApp",
+        backgroundColor: "#3da81d",
+    },
 ]
 
 // Fullstack skills
 const FullstackSkills: ExternalSite[] = [
     {
         name: "Angular",
-        link: "https://angular.dev/",
+        link: "",
         simpleIconName: "Angular",
         backgroundColor: "#ea2848",
     },
     {
-        name: "HTML5",
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        simpleIconName: "HTML5",
-        backgroundColor: "#E34F26",
-    },
-    {
-        name: "CSS3",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        simpleIconName: "CSS3",
+        name: "React",
+        link: "",
+        simpleIconName: "React",
         backgroundColor: "#1572B6",
     },
     {
-        name: "Sass",
-        link: "https://sass-lang.com/",
-        simpleIconName: "Sass",
-        backgroundColor: "#CC6699",
-    },
-    {
         name: "NodeJS",
-        link: "https://nodejs.org/",
+        link: "",
         simpleIconName: "Node.js",
         backgroundColor: "#5FA04E",
     },
     {
-        name: "JavaScript",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        simpleIconName: "JavaScript",
-        backgroundColor: "#F7DF1E",
+        name: "Java",
+        link: "",
+        simpleIconName: "Java",
+        backgroundColor: "#ffffffd3",
     },
     {
-        name: "ExpressJS",
-        link: "https://expressjs.com/",
-        simpleIconName: "Express",
-        backgroundColor: "#000000",
+        name: "PHP",
+        link: "",
+        simpleIconName: "PHP",
+        backgroundColor: "#ffffffd3",
     },
     {
-        name: "ThreeJS",
-        link: "https://threejs.org/",
-        simpleIconName: "Three.js",
-        backgroundColor: "#000000",
-    },
-    {
-        name: "Tailwind CSS",
-        link: "https://tailwindcss.com/",
-        simpleIconName: "Tailwind CSS",
-        backgroundColor: "#06B6D4",
-    },
-    {
-        name: "Bootstrap",
-        link: "https://getbootstrap.com/",
-        simpleIconName: "Bootstrap",
-        backgroundColor: "#7952B3",
-    },
-    {
-        name: "PrimeNG",
-        link: "https://primeng.org/",
-        simpleIconName: "PrimeNG",
-        backgroundColor: "#DD0031",
+        name: "Postgresql",
+        link: "",
+        simpleIconName: "Postgresql",
+        backgroundColor: "#ffffff",
     },
 ];
 
@@ -115,74 +73,42 @@ const FullstackSection: SkillSection = {
     imagePath: AssetPaths.FULL_STACK_DEVELOPMENT_SVG,
     skillLinks: FullstackSkills,
     skillsList: [
-        "Building responsive website front-end using Angular",
-        "Developing custom and interactive 3D websites",
-        "Creating application backend in Node, Express & NestJS",
-        "Managing data safely with PostgreSQL, MongoDB and OracleDB",
+        "Composée de 4 développeurs expérimentés",
+        "Parcours professionnel chez ITUniversity",
+        "Nous venons de différentes entreprises à Madagascar avec des postes variés dans le développement",
+        "Deux développeurs front-end et conception d’API REST, un développeur spécialisé en intégration de bases de données, un hébergeur web",
     ]
 }
 
 // Could skills
 const CloudSkills: ExternalSite[] = [
-    {
-        name: "GCP",
-        link: "https://cloud.google.com/",
-        simpleIconName: "Google Cloud",
-        backgroundColor: "#4285F4",
-    },
-    {
-        name: "AWS",
-        link: "https://aws.amazon.com/",
-        simpleIconName: "Amazon Web Services",
-        backgroundColor: "#232F3E",
-    },
-    {
-        name: "Firebase",
-        link: "https://firebase.google.com/",
-        simpleIconName: "Firebase",
-        backgroundColor: "#FFCA28",
-    },
-    {
-        name: "PostgreSQL",
-        link: "https://www.postgresql.org/",
-        simpleIconName: "PostgreSQL",
-        backgroundColor: "#336791",
-    },
-    {
-        name: "MongoDB",
-        link: "https://www.mongodb.com/",
-        simpleIconName: "MongoDB",
-        backgroundColor: "#47A248",
-    },
-    {
-        name: "Docker",
-        link: "https://www.docker.com/",
-        simpleIconName: "Docker",
-        backgroundColor: "#1488C6",
-    },
-    {
-        name: "Render",
-        link: "https://render.com/",
-        simpleIconName: "Render",
-        backgroundColor: "#000000",
-    },
-    {
-        name: "Heroku",
-        link: "https://www.heroku.com/",
-        simpleIconName: "Heroku",
-        backgroundColor: "#430098",
-    },
+    // {
+    //     name: "Heroku",
+    //     link: "https://www.heroku.com/",
+    //     simpleIconName: "Heroku",
+    //     backgroundColor: "#430098",
+    // }
 ];
 
 // Could section
 const CloudSection: SkillSection = {
-    sectionTitle: "Cloud Infra-Architecture",
+    sectionTitle: "Nos services",
     imagePath: AssetPaths.CLOUD_INFRASTRUCTURE_SVG,
     skillLinks: CloudSkills,
     skillsList: [
-        "Experience working on multiple cloud platforms including GCP, AWS, FireBase, and Render",
-        "Hosting and maintaining websites on FireBase hosting and GoDaddy along with integration of databases",
-        "Setting up email triggers and Googlesheet integration for streamline client inquiry",
+        "<strong>Application de gestion :</strong>",
+        "&nbsp;&nbsp;• Système d'information d'une entreprise, digitalisant les tâches grâce aux données internes",
+        "&nbsp;&nbsp;• Mise en place de systèmes de gestion RH ou de comptabilité",
+        "&nbsp;&nbsp;• Personnalisation des applications existantes, modifications des ERP",
+        "<strong>Création de sites web</strong>",
+        "&nbsp;&nbsp;• Site web vitrine, utilisant toutes les technologies demandées",
+        "&nbsp;&nbsp;• Site web dynamique, dont le contenu change en fonction des données, comme les sites d’annonces",
+        "&nbsp;&nbsp;• Site web de vente, e-commerce et boutique en ligne",
+        "<strong>Maintenance & Hébergement</strong>",
+        "&nbsp;&nbsp;• Création de noms de domaine selon la demande du client",
+        "&nbsp;&nbsp;• Configuration d’e-mails professionnels avec le nom de domaine",
+        "&nbsp;&nbsp;• Hébergement web sécurisé",
+        "&nbsp;&nbsp;• Mises à jour et support technique",
     ]
 }
 
@@ -213,35 +139,6 @@ const DesignSkills: ExternalSite[] = [
         backgroundColor: "#001e36",
     },
 ];
-
-// Design section
-const DesignSection: SkillSection = {
-    sectionTitle: "UI/UX Design",
-    imagePath: AssetPaths.UI_UX_DESIGN_SVG,
-    skillLinks: DesignSkills,
-    skillsList: [
-        "Designing highly attractive and responsive user interface for web applications",
-        "Customizing logo designs, creating visiting cards and virtual cards from scratch",
-        "Creating the flow of application functionalities to optimize user experience",
-    ]
-}
-
-// Design skills
-const DigitalSolutionSkills: ExternalSite[] = [
-
-];
-
-// Design section
-const DigitalSolutionSection: SkillSection = {
-    sectionTitle: "Digital Solutions & Consultancy",
-    imagePath: AssetPaths.DIGITAL_SOLUTIONS_SVG,
-    skillLinks: DigitalSolutionSkills,
-    skillsList: [
-        "Streamlining business operations with tools like Jira, offering automated workflows, and data-driven insights.",
-        "Centralizing business data within secure, interconnected platforms to facilitate informed decision-making",
-        "Helping local businesses enable real-time communication and task coordination through MS Teams and Outlook",
-    ]
-}
 
 // Personal projects
 const PersonalProjects: ProjectSection = {
@@ -580,44 +477,25 @@ const BachelorsDegree: EducationSection = {
     ]
 }
 
-const MastersDegree: EducationSection = {
-    degreeName: "Master of Information Technology",
-    majorName: "Cyber Security",
-    duration: "Feb 2024 - Dec 2025",
-    universityName: "University of South Australia (UniSA)",
-    campusName: "Mawson Lakes",
-    logoImagePath: AssetPaths.EDUCATION_UNISA_LOGO,
-    gpa: "6.7 / 7.0",
-    websiteLink: "https://i.unisa.edu.au/students/",
-    studyPoints: [
-        "Built expertise in Security Principles, Network Infrastructure, and Risk Management, laying a solid foundation in cybersecurity fundamentals. 🔐",
-        "Gained deep knowledge in Security Architecture, Network Security, and Critical Infrastructure Protection, alongside insights into Cyber Criminal Behavior and Australian Cyber Law. ⚙️🛡️",
-        "Developed strategic skills through Consultancy, Enterprise Security, and hands-on labs experience with tech-giants including Cisco and FortiGate. 🚀",
-    ]
-}
-
-
 
 export const AppConfig = {
     loaderSplashAnimation: true,        // enable or disable splash screen at the initialization of website
-    logoName: "Dhruvil Rathod",         // Signature font logo name in header
-    name: "Dhruvil Rathod",             // your name
+    logoName: "Dev-Professionnel",         // Signature font logo name in header
+    name: "Dev-Professionnel",             // your name
     emailId: "thedhruvilrathod@gmail.com",  // your email id
 
     // Google Form Contact Link
-    googleFormContactLink: "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
+    googleFormContactLink: "https://docs.google.com/forms/d/e/1FAIpQLSdLL8txhuCh8_On7-QAysulM7O7bagAOLcT-TrjX96Vj9FIeg/viewform?usp=publish-editor",
 
     // Home page
-    professionalTitle: "Development | Cyber Security | Freelancing",
-    professionalSummary: "A results-driven software engineer with expertise in full-stack development of high-quality user-centric solutions in agile environments.",
+    professionalTitle: "Développeurs Freelance",
+    professionalSummary: "Forte expérience dans le développement full-stack, la conception d’API REST, la gestion de bases de données relationnelles et NoSQL, et le déploiement en production.",
     githubProfile: "https://github.com/dhruvilrathod",              // Your github profile link
     portfolioRepository: "https://github.com/dhruvilrathod/Angular-Master-Portfolio",        // Your portfolio repository link
     socialMedia: SocialMediaLinks,      // use from above
     aboutMe: [                          // all the sections you want to show under "What I do?". 
         FullstackSection,
         CloudSection,
-        DesignSection,
-        DigitalSolutionSection,
     ],
 
     // Projects page
@@ -638,11 +516,9 @@ export const AppConfig = {
     ],
 
     // Education page
-    educationPageTitle: "Degrees and Qualifications",
-    educationPageDescription: "🎓 A Journey of Continuous Learning: Building Skills, Solving Problems, and Shaping the Future 🌟",
+    educationPageTitle: "Technologie",
+    educationPageDescription: "💻 Les outils et technologies que nous maîtrisons pour créer des solutions innovantes pour le web et les applications",
     educationSections: [
-        MastersDegree,
-        BachelorsDegree,
     ],
 
 

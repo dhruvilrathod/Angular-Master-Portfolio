@@ -5,7 +5,7 @@
         <div class="skills-header-div my-8" data-aos="fade-up">
 
             <h1 class="skills-header">
-                What I Do?
+                Qui somme nous ? 
             </h1>
         </div>
 
@@ -26,34 +26,40 @@
                     <div class="social-media-div">
 
                         @for (l of ab.skillLinks; track $index) {
-                            <a 
-                                [href]="l.link"
-                                target="_blank"
-                                rel="noopener noreferrer" 
-                                class="icon-button"
-                                [title]="l.name"
-                                >
-                        
-                                <div class="img-container" [ngStyle]="{'backgroundColor': l.backgroundColor}">
-                                    <img 
-                                        src="{{ assetPaths.SIMPLE_ICONS }}/{{ l.simpleIconName }}.svg"
-                                        />
+
+                            <!-- Si le lien existe, on met <a> -->
+                            @if (l.link) {
+                                <a 
+                                    [href]="l.link"
+                                    target="_blank"
+                                    rel="noopener noreferrer" 
+                                    class="icon-button"
+                                    [title]="l.name">
+                                    <div class="img-container" [ngStyle]="{'backgroundColor': l.backgroundColor}">
+                                        <img src="{{ assetPaths.SIMPLE_ICONS }}/{{ l.simpleIconName }}.svg" />
+                                    </div>
+                                </a>
+                            }
+
+                            <!-- Sinon juste l'icône -->
+                            @else {
+                                <div class="icon-button" [title]="l.name">
+                                    <div class="img-container" [ngStyle]="{'backgroundColor': l.backgroundColor}">
+                                        <img src="{{ assetPaths.SIMPLE_ICONS }}/{{ l.simpleIconName }}.svg" />
+                                    </div>
                                 </div>
-                        
-                            </a>
+                            }
+
                         }
                     </div>
     
-                    <div>
-    
-                        @for (sl of ab.skillsList; track $index) {
-                            <p class="subTitle skills-text">
-                                ⚡ {{ sl }}
-                            </p>
-                        }
-    
+                    <div *ngFor="let sl of ab.skillsList">
+                        <p class="subTitle skills-text" *ngIf="ab.sectionTitle === 'Nos services'; else normalItem" [innerHTML]="sl"></p>
+                        <ng-template #normalItem>
+                            <p class="subTitle skills-text">▸ {{ sl }}</p>
+                        </ng-template>
+                        </div>
                     </div>
-                </div>
             </div>
         }
 

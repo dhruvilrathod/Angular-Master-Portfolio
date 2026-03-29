@@ -31,7 +31,7 @@
 }
 
 .education-heading-img-div>* {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -89,7 +89,6 @@
 }
 
 @media (max-width: 1380px) {
-
     .education-main {
         margin-top: 4rem;
     }
@@ -111,26 +110,49 @@
         font-size: 30px;
         margin-top: 20px;
     }
+}
+.containt-tech {
+    margin-top: 60px;
+}
 
-    .education-heading-sub-text {
-        font-size: 20px;
-    }
+.tech-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
 
-    .education-heading-div {
-        flex-direction: column;
-    }
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    margin: 0 5%;
+}
 
-    .education-header-detail-text {
-        font-size: 16px;
-        margin-right: 0px;
-        margin-left: 0px;
-        line-height: normal;
-        text-align: center;
-    }
+.tech-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
 
-    .education-cards-div-main {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centre horizontalement */
+    justify-content: center; /* centre verticalement */
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.tech-card span {
+    font-size: 14px;
+    font-weight: 500;
 }

@@ -7,9 +7,10 @@ export enum AppRoutes {
     EDUCATION = "education",
     PROJECTS = "projects",
     ACHIEVEMENTS = "achievements",
+    TECHNOLOGIE = "technologie",
 
     // Your google form link
-    CONTACT = "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
+    CONTACT = "https://docs.google.com/forms/d/e/1FAIpQLSdLL8txhuCh8_On7-QAysulM7O7bagAOLcT-TrjX96Vj9FIeg/viewform?usp=publish-editor",
 }
 
 export const RoutesData: RouteData[] = [
@@ -19,26 +20,11 @@ export const RoutesData: RouteData[] = [
         isVisible: true,
     },
     {
-        routeLinkText: "Projects",
-        routeURLName: AppRoutes.PROJECTS,
+        routeLinkText: "Technologie",
+        routeURLName: AppRoutes.TECHNOLOGIE,
         isVisible: true,
     },
-    {
-        routeLinkText: "Experience",
-        routeURLName: AppRoutes.EXPERIENCE,
-        isVisible: true,
-    },
-    {
-        routeLinkText: "Education",
-        routeURLName: AppRoutes.EDUCATION,
-        isVisible: true,
-    },
-    {
-        routeLinkText: "Achievements",
-        routeURLName: AppRoutes.ACHIEVEMENTS,
-        isVisible: true,
-    },
-    {
+   {
         routeLinkText: "Contact",
         routeURLName: AppRoutes.CONTACT,
         isVisible: true,

@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         AOS.init({
-            duration: 500,
+            duration: 20000,
             once: true,
         });
     }
